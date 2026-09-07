@@ -1,0 +1,32 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import crypto from 'node:crypto';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+
+const bytes = fs.readFileSync('public/models/human-brain.glb');
+const manifest = JSON.parse(fs.readFileSync('public/models/manifest.json','utf8'));
+assert.equal(bytes.readUInt32LE(0),0x46546c67);
+assert.equal(bytes.readUInt32LE(8),bytes.length);
+assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),manifest.sha256);
+const gltf = await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength),'');
+let count = 0, triangles = 0;
+const hemispheres = {left:0,right:0,midline:0};
+gltf.scene.traverse(mesh=>{
+  if(!mesh.isMesh)return;
+  count++; const part=mesh.userData; hemispheres[part.hemisphere]++;
+  assert.equal(typeof part.name,'string');
+  assert.equal(typeof part.cortical,'boolean');
+  assert.ok(manifest.parts.some(p=>p.name===part.name));
+  const {position,normal}=mesh.geometry.attributes;
+  for(const n of position.array)assert.ok(Number.isFinite(n));
+  for(const n of normal.array)assert.ok(Number.isFinite(n));
+  for(const i of mesh.geometry.index.array)assert.ok(i>=0 && i<position.count);
+  triangles+=mesh.geometry.index.count/3;
+  mesh.geometry.computeBoundingBox();
+  const center=mesh.geometry.boundingBox.getCenter(mesh.position.clone());
+  if(part.cortical && part.hemisphere==='left')assert.ok(center.x<0);
+  if(part.cortical && part.hemisphere==='right')assert.ok(center.x>0);
+});
+assert.equal(count,102);assert.equal(triangles,923667);assert.equal(triangles,manifest.triangles);
+assert.equal(hemispheres.left,hemispheres.right);
+console.log(`Verified GLTFLoader compatibility, ${count} meshes, ${triangles} valid triangles, finite positions/normals, hemisphere orientation, and SHA-256.`);

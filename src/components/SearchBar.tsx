@@ -1,79 +1,15 @@
-import { useState } from "react";
-
-interface SearchBarProps {
-  onSearch: (query: string) => void;
-  isLoading: boolean;
+import { useState } from 'react';
+import { ArrowUp, Loader2, Sparkles } from 'lucide-react';
+interface Props { onSearch:(query:string)=>void; isLoading:boolean; }
+export default function SearchBar({onSearch,isLoading}:Props) {
+  const [query,setQuery] = useState('');
+  function submit(value:string){if(!isLoading && value.trim()){setQuery(value);onSearch(value.trim());}}
+  return <div className="activity-search">
+    <form onSubmit={e=>{e.preventDefault();submit(query);}}>
+      <Sparkles size={19} aria-hidden="true"/>
+      <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="What are you curious about? Try playing the piano…" aria-label="Describe an activity" disabled={isLoading} maxLength={500}/>
+      <button type="submit" disabled={isLoading || !query.trim()} aria-label="Explore activity">{isLoading?<Loader2 size={19} className="animate-spin"/>:<ArrowUp size={20}/>}</button>
+    </form>
+    <div className="suggestions"><span>Try a little wonder</span>{['Playing the piano','Remembering a face','Learning to dance'].map(s=><button key={s} disabled={isLoading} onClick={()=>submit(s)}>{s}<span aria-hidden="true">↗</span></button>)}</div>
+  </div>;
 }
-
-const suggestions = [
-  "Running a marathon",
-  "Solving a math problem",
-  "Playing the piano",
-  "Reading a book",
-  "Coding a website",
-  "Dancing salsa",
-  "Feeling anxious",
-  "Riding a bicycle",
-];
-
-const SearchBar = ({ onSearch, isLoading }: SearchBarProps) => {
-  const [query, setQuery] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (query.trim() && !isLoading) {
-      onSearch(query.trim());
-    }
-  };
-
-  const handleSuggestionClick = (suggestion: string) => {
-    setQuery(suggestion);
-    onSearch(suggestion);
-  };
-
-  return (
-    <div className="w-full space-y-4">
-      <form onSubmit={handleSubmit} className="relative">
-        <div className="editorial-search-container">
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Describe an activity..."
-            className="editorial-search-input"
-            aria-label="Search"
-            disabled={isLoading}
-          />
-          {query && (
-            <button
-              type="submit"
-              className="flex-shrink-0 p-2 rounded-lg transition-transform active:scale-95"
-              disabled={isLoading}
-            >
-              <img
-                src="/search.png"
-                alt="Search"
-                className="w-5 h-5 object-contain dark:invert"
-              />
-            </button>
-          )}
-        </div>
-      </form>
-
-      <div className="flex flex-wrap gap-2">
-        {suggestions.map((suggestion) => (
-          <button
-            key={suggestion}
-            onClick={() => handleSuggestionClick(suggestion)}
-            className="apple-badge hover:bg-primary/10 hover:text-primary transition-all duration-200"
-            disabled={isLoading}
-          >
-            {suggestion}
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default SearchBar;

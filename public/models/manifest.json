@@ -1,0 +1,1232 @@
+{
+  "source": "https://brainder.org/research/brain-for-blender/",
+  "license": "CC BY-SA 3.0",
+  "sha256": "c7f4c1621153a954267773009458c6288f3ebb807732555b5805b22aa8caa4cb",
+  "parts": [
+    {
+      "name": "lh.bankssts",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 3020,
+      "triangles": 4628,
+      "center": [
+        -1.467278778553009,
+        -0.0466221421957016,
+        -0.7750999629497528
+      ]
+    },
+    {
+      "name": "lh.caudalanteriorcingulate",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 1446,
+      "triangles": 1968,
+      "center": [
+        -0.1354010202921927,
+        0.09446534514427185,
+        0.9220410585403442
+      ]
+    },
+    {
+      "name": "lh.caudalmiddlefrontal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 5308,
+      "triangles": 8876,
+      "center": [
+        -0.9327719509601593,
+        0.747174859046936,
+        0.8508192896842957
+      ]
+    },
+    {
+      "name": "lh.cuneus",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 3258,
+      "triangles": 5115,
+      "center": [
+        -0.2292927447706461,
+        0.34243832901120186,
+        -1.6133230924606323
+      ]
+    },
+    {
+      "name": "lh.entorhinal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 1376,
+      "triangles": 1717,
+      "center": [
+        -0.6714938282966614,
+        -1.1014951169490814,
+        0.12002241611480713
+      ]
+    },
+    {
+      "name": "lh.frontalpole",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 629,
+      "triangles": 813,
+      "center": [
+        -0.22173034527804703,
+        -0.79678675532341,
+        2.0219444036483765
+      ]
+    },
+    {
+      "name": "lh.fusiform",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 6581,
+      "triangles": 10880,
+      "center": [
+        -0.9223825633525848,
+        -0.8470452651381493,
+        -0.6584269851446152
+      ]
+    },
+    {
+      "name": "lh.inferiorparietal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 9481,
+      "triangles": 16555,
+      "center": [
+        -0.9689521342515945,
+        0.6656641829758883,
+        -1.286708950996399
+      ]
+    },
+    {
+      "name": "lh.inferiortemporal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 7137,
+      "triangles": 11793,
+      "center": [
+        -1.3209970891475677,
+        -0.6951555497944355,
+        -0.5255802869796753
+      ]
+    },
+    {
+      "name": "lh.insula",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 4696,
+      "triangles": 7579,
+      "center": [
+        -0.9226818978786469,
+        -0.32721588015556335,
+        0.37065915763378143
+      ]
+    },
+    {
+      "name": "lh.isthmuscingulate",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 2682,
+      "triangles": 3850,
+      "center": [
+        -0.18797384155914187,
+        0.20752015709877014,
+        -0.5462319739162922
+      ]
+    },
+    {
+      "name": "lh.lateraloccipital",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 8661,
+      "triangles": 15099,
+      "center": [
+        -0.8041128129698336,
+        -0.015392482280731201,
+        -1.7807756066322327
+      ]
+    },
+    {
+      "name": "lh.lateralorbitofrontal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 6440,
+      "triangles": 10975,
+      "center": [
+        -0.7000939697027206,
+        -0.7455699518322945,
+        1.2249996066093445
+      ]
+    },
+    {
+      "name": "lh.lingual",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 6071,
+      "triangles": 10343,
+      "center": [
+        -0.3793918788433075,
+        -0.13768072426319122,
+        -1.515940248966217
+      ]
+    },
+    {
+      "name": "lh.medialorbitofrontal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 4419,
+      "triangles": 6749,
+      "center": [
+        -0.4648677706718445,
+        -0.829262912273407,
+        1.1387904956936836
+      ]
+    },
+    {
+      "name": "lh.middletemporal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 7311,
+      "triangles": 11813,
+      "center": [
+        -1.4415869116783142,
+        -0.4502294212579727,
+        -0.5064637959003448
+      ]
+    },
+    {
+      "name": "lh.paracentral",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 3457,
+      "triangles": 5648,
+      "center": [
+        -0.21827911958098412,
+        1.1223974525928497,
+        -0.09504382312297821
+      ]
+    },
+    {
+      "name": "lh.parahippocampal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 2396,
+      "triangles": 3545,
+      "center": [
+        -0.6181437820196152,
+        -0.6423792243003845,
+        -0.4852924454025924
+      ]
+    },
+    {
+      "name": "lh.parsopercularis",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 3511,
+      "triangles": 5518,
+      "center": [
+        -1.2185667753219604,
+        -0.09125109016895294,
+        0.9806426912546158
+      ]
+    },
+    {
+      "name": "lh.parsorbitalis",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 1442,
+      "triangles": 2084,
+      "center": [
+        -1.1636119484901428,
+        -0.7006034106016159,
+        1.2080053985118866
+      ]
+    },
+    {
+      "name": "lh.parstriangularis",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 2754,
+      "triangles": 4358,
+      "center": [
+        -1.2352235317230225,
+        -0.3215734176337719,
+        1.1533649563789368
+      ]
+    },
+    {
+      "name": "lh.pericalcarine",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 2949,
+      "triangles": 4455,
+      "center": [
+        -0.2094891108572483,
+        0.023683160543441772,
+        -1.5662933588027954
+      ]
+    },
+    {
+      "name": "lh.postcentral",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 8633,
+      "triangles": 14572,
+      "center": [
+        -0.972661018371582,
+        0.6593361496925354,
+        0.06943754851818085
+      ]
+    },
+    {
+      "name": "lh.posteriorcingulate",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 2570,
+      "triangles": 3955,
+      "center": [
+        -0.20409534871578217,
+        0.591764360666275,
+        0.06762704253196716
+      ]
+    },
+    {
+      "name": "lh.precentral",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 11107,
+      "triangles": 19006,
+      "center": [
+        -0.8899666592478752,
+        0.5513707995414734,
+        0.30495187640190125
+      ]
+    },
+    {
+      "name": "lh.precuneus",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 7431,
+      "triangles": 12582,
+      "center": [
+        -0.25143987592309713,
+        0.7872815853916109,
+        -0.9175741001963615
+      ]
+    },
+    {
+      "name": "lh.rostralanteriorcingulate",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 2100,
+      "triangles": 3073,
+      "center": [
+        -0.14597941935062408,
+        -0.4418908543884754,
+        1.1672762632369995
+      ]
+    },
+    {
+      "name": "lh.rostralmiddlefrontal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 10521,
+      "triangles": 18461,
+      "center": [
+        -0.8822469860315323,
+        -0.1437675952911377,
+        1.5961397290229797
+      ]
+    },
+    {
+      "name": "lh.superiorfrontal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 14388,
+      "triangles": 25822,
+      "center": [
+        -0.3365430533885956,
+        0.39248570799827576,
+        1.2020607814192772
+      ]
+    },
+    {
+      "name": "lh.superiorparietal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 9919,
+      "triangles": 16942,
+      "center": [
+        -0.4947376132477075,
+        0.8664488270878792,
+        -1.1385891288518906
+      ]
+    },
+    {
+      "name": "lh.superiortemporal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 7700,
+      "triangles": 12810,
+      "center": [
+        -1.3921005725860596,
+        -0.3829535245895386,
+        -0.03738018870353699
+      ]
+    },
+    {
+      "name": "lh.supramarginal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 8359,
+      "triangles": 14522,
+      "center": [
+        -1.2836657166481018,
+        0.6594389509409666,
+        -0.4747041054069996
+      ]
+    },
+    {
+      "name": "lh.temporalpole",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 1173,
+      "triangles": 1646,
+      "center": [
+        -0.8937147855758667,
+        -1.1568927466869354,
+        0.6113324165344238
+      ]
+    },
+    {
+      "name": "lh.transversetemporal",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 1159,
+      "triangles": 1604,
+      "center": [
+        -1.1289744675159454,
+        -0.0538049042224884,
+        -0.09249836951494217
+      ]
+    },
+    {
+      "name": "lh.unknown",
+      "cortical": true,
+      "hemisphere": "left",
+      "vertices": 9539,
+      "triangles": 16614,
+      "center": [
+        -0.49411684460937977,
+        -0.33735693991184235,
+        0.28669965267181396
+      ]
+    },
+    {
+      "name": "rh.bankssts",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 2211,
+      "triangles": 3334,
+      "center": [
+        1.4028338193893433,
+        0.02279020845890045,
+        -0.5404829233884811
+      ]
+    },
+    {
+      "name": "rh.caudalanteriorcingulate",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 2218,
+      "triangles": 3272,
+      "center": [
+        0.1566924056969583,
+        0.09606730937957764,
+        1.0484025478363037
+      ]
+    },
+    {
+      "name": "rh.caudalmiddlefrontal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 4800,
+      "triangles": 8008,
+      "center": [
+        0.9277069270610809,
+        0.7231982871890068,
+        0.9207858741283417
+      ]
+    },
+    {
+      "name": "rh.cuneus",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 3244,
+      "triangles": 5098,
+      "center": [
+        0.24708591122180223,
+        0.3628091529244557,
+        -1.5731257200241089
+      ]
+    },
+    {
+      "name": "rh.entorhinal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 935,
+      "triangles": 1197,
+      "center": [
+        0.5684973299503326,
+        -1.10707688331604,
+        0.024035871028900146
+      ]
+    },
+    {
+      "name": "rh.frontalpole",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 637,
+      "triangles": 796,
+      "center": [
+        0.1592753091827035,
+        -0.8864041566848755,
+        2.026070475578308
+      ]
+    },
+    {
+      "name": "rh.fusiform",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 6544,
+      "triangles": 10748,
+      "center": [
+        0.7807241380214691,
+        -0.8052690513432026,
+        -0.6092460006475449
+      ]
+    },
+    {
+      "name": "rh.inferiorparietal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 11477,
+      "triangles": 20438,
+      "center": [
+        1.0641821026802063,
+        0.6617650827392936,
+        -1.0722437798976898
+      ]
+    },
+    {
+      "name": "rh.inferiortemporal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 7136,
+      "triangles": 11889,
+      "center": [
+        1.2329797446727753,
+        -0.8395607694983482,
+        -0.4513194262981415
+      ]
+    },
+    {
+      "name": "rh.insula",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 4445,
+      "triangles": 7115,
+      "center": [
+        0.9286384284496307,
+        -0.3706074506044388,
+        0.48537564277648926
+      ]
+    },
+    {
+      "name": "rh.isthmuscingulate",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 2410,
+      "triangles": 3452,
+      "center": [
+        0.2178735756315291,
+        0.1722285896539688,
+        -0.5567513555288315
+      ]
+    },
+    {
+      "name": "rh.lateraloccipital",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 8024,
+      "triangles": 13758,
+      "center": [
+        0.8599172309041023,
+        -0.05351532995700836,
+        -1.6027612090110779
+      ]
+    },
+    {
+      "name": "rh.lateralorbitofrontal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 6348,
+      "triangles": 10619,
+      "center": [
+        0.7349649667739868,
+        -0.7846413850784302,
+        1.148619070649147
+      ]
+    },
+    {
+      "name": "rh.lingual",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 5650,
+      "triangles": 9564,
+      "center": [
+        0.37273513339459896,
+        -0.06709806621074677,
+        -1.3855576813220978
+      ]
+    },
+    {
+      "name": "rh.medialorbitofrontal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 4719,
+      "triangles": 7364,
+      "center": [
+        0.17694565653800964,
+        -0.7966156005859375,
+        1.1578686237335205
+      ]
+    },
+    {
+      "name": "rh.middletemporal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 7864,
+      "triangles": 13074,
+      "center": [
+        1.4121411442756653,
+        -0.516167163848877,
+        -0.3421425223350525
+      ]
+    },
+    {
+      "name": "rh.paracentral",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 3866,
+      "triangles": 6348,
+      "center": [
+        0.22431187564507127,
+        1.0905140936374664,
+        0.016367629170417786
+      ]
+    },
+    {
+      "name": "rh.parahippocampal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 1864,
+      "triangles": 2681,
+      "center": [
+        0.5962509214878082,
+        -0.6231674924492836,
+        -0.5225057154893875
+      ]
+    },
+    {
+      "name": "rh.parsopercularis",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 3175,
+      "triangles": 5032,
+      "center": [
+        1.2965131103992462,
+        -0.16815710067749023,
+        0.9271847605705261
+      ]
+    },
+    {
+      "name": "rh.parsorbitalis",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 2183,
+      "triangles": 3269,
+      "center": [
+        1.1438193023204803,
+        -0.7935270965099335,
+        1.341301143169403
+      ]
+    },
+    {
+      "name": "rh.parstriangularis",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 4604,
+      "triangles": 7560,
+      "center": [
+        1.2418279945850372,
+        -0.3744856268167496,
+        1.3141556978225708
+      ]
+    },
+    {
+      "name": "rh.pericalcarine",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 2950,
+      "triangles": 4361,
+      "center": [
+        0.24775234051048756,
+        0.09004971385002136,
+        -1.5296788811683655
+      ]
+    },
+    {
+      "name": "rh.postcentral",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 8804,
+      "triangles": 14910,
+      "center": [
+        0.9228505710489117,
+        0.6678533256053925,
+        0.10592420399188995
+      ]
+    },
+    {
+      "name": "rh.posteriorcingulate",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 3226,
+      "triangles": 4984,
+      "center": [
+        0.21455592941492796,
+        0.5451965108513832,
+        0.22820661962032318
+      ]
+    },
+    {
+      "name": "rh.precentral",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 9211,
+      "triangles": 15476,
+      "center": [
+        0.9430547058582306,
+        0.4836304485797882,
+        0.4448050446808338
+      ]
+    },
+    {
+      "name": "rh.precuneus",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 8044,
+      "triangles": 13685,
+      "center": [
+        0.26771701965481043,
+        0.8318261243402958,
+        -0.9138292446732521
+      ]
+    },
+    {
+      "name": "rh.rostralanteriorcingulate",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 1583,
+      "triangles": 2197,
+      "center": [
+        0.17569663748145103,
+        -0.4079866297543049,
+        1.0777128338813782
+      ]
+    },
+    {
+      "name": "rh.rostralmiddlefrontal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 12275,
+      "triangles": 21466,
+      "center": [
+        0.9057042375206947,
+        -0.14156228303909302,
+        1.5467270910739899
+      ]
+    },
+    {
+      "name": "rh.superiorfrontal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 13511,
+      "triangles": 23990,
+      "center": [
+        0.4207645709393546,
+        0.3275845944881439,
+        1.3461110591888428
+      ]
+    },
+    {
+      "name": "rh.superiorparietal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 10270,
+      "triangles": 17520,
+      "center": [
+        0.5467905956320465,
+        0.91815385222435,
+        -1.0687819756567478
+      ]
+    },
+    {
+      "name": "rh.superiortemporal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 7028,
+      "triangles": 11660,
+      "center": [
+        1.3563501238822937,
+        -0.5230216979980469,
+        0.08517733216285706
+      ]
+    },
+    {
+      "name": "rh.supramarginal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 7355,
+      "triangles": 12710,
+      "center": [
+        1.3005752861499786,
+        0.5169762596487999,
+        -0.306862011551857
+      ]
+    },
+    {
+      "name": "rh.temporalpole",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 1078,
+      "triangles": 1428,
+      "center": [
+        0.8187120109796524,
+        -1.1474365293979645,
+        0.4666486978530884
+      ]
+    },
+    {
+      "name": "rh.transversetemporal",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 1197,
+      "triangles": 1637,
+      "center": [
+        1.2383618354797363,
+        -0.08449389040470123,
+        0.018617093563079834
+      ]
+    },
+    {
+      "name": "rh.unknown",
+      "cortical": true,
+      "hemisphere": "right",
+      "vertices": 9530,
+      "triangles": 16621,
+      "center": [
+        0.4750356040894985,
+        -0.35329708456993103,
+        0.2451285421848297
+      ]
+    },
+    {
+      "name": "3rd-Ventricle",
+      "cortical": false,
+      "hemisphere": "midline",
+      "vertices": 1282,
+      "triangles": 2560,
+      "center": [
+        -0.021027833223342896,
+        -0.3933428078889847,
+        0.02401992678642273
+      ]
+    },
+    {
+      "name": "4th-Ventricle",
+      "cortical": false,
+      "hemisphere": "midline",
+      "vertices": 2476,
+      "triangles": 4952,
+      "center": [
+        -0.09652058780193329,
+        -0.8563166260719299,
+        -0.8150889724493027
+      ]
+    },
+    {
+      "name": "Brain-Stem",
+      "cortical": false,
+      "hemisphere": "midline",
+      "vertices": 8724,
+      "triangles": 17452,
+      "center": [
+        -0.005135029554367065,
+        -0.9278378412127495,
+        -0.623301312327385
+      ]
+    },
+    {
+      "name": "CC_Anterior",
+      "cortical": false,
+      "hemisphere": "midline",
+      "vertices": 542,
+      "triangles": 1080,
+      "center": [
+        -0.016517700627446175,
+        -0.2205725610256195,
+        1.000190943479538
+      ]
+    },
+    {
+      "name": "CC_Central",
+      "cortical": false,
+      "hemisphere": "midline",
+      "vertices": 480,
+      "triangles": 956,
+      "center": [
+        -0.017076704651117325,
+        0.14115969091653824,
+        0.3841235712170601
+      ]
+    },
+    {
+      "name": "CC_Mid_Anterior",
+      "cortical": false,
+      "hemisphere": "midline",
+      "vertices": 596,
+      "triangles": 1188,
+      "center": [
+        -0.016450650990009308,
+        -0.0742097869515419,
+        0.7257930636405945
+      ]
+    },
+    {
+      "name": "CC_Mid_Posterior",
+      "cortical": false,
+      "hemisphere": "midline",
+      "vertices": 554,
+      "triangles": 1104,
+      "center": [
+        -0.014375954866409302,
+        0.17965122126042843,
+        0.017504967749118805
+      ]
+    },
+    {
+      "name": "CC_Posterior",
+      "cortical": false,
+      "hemisphere": "midline",
+      "vertices": 718,
+      "triangles": 1432,
+      "center": [
+        -0.016514278948307037,
+        0.13339991867542267,
+        -0.35958782583475113
+      ]
+    },
+    {
+      "name": "Left-Accumbens-area",
+      "cortical": false,
+      "hemisphere": "left",
+      "vertices": 670,
+      "triangles": 1336,
+      "center": [
+        -0.2833838388323784,
+        -0.4974122643470764,
+        0.5810601115226746
+      ]
+    },
+    {
+      "name": "Left-Amygdala",
+      "cortical": false,
+      "hemisphere": "left",
+      "vertices": 1194,
+      "triangles": 2384,
+      "center": [
+        -0.6666060239076614,
+        -0.7565303444862366,
+        0.11336279008537531
+      ]
+    },
+    {
+      "name": "Left-Caudate",
+      "cortical": false,
+      "hemisphere": "left",
+      "vertices": 2870,
+      "triangles": 5736,
+      "center": [
+        -0.3440064787864685,
+        -0.1136934757232666,
+        0.37888914346694946
+      ]
+    },
+    {
+      "name": "Left-Cerebellum-Cortex",
+      "cortical": false,
+      "hemisphere": "left",
+      "vertices": 30422,
+      "triangles": 60940,
+      "center": [
+        -0.8327814799267799,
+        -0.8505541272461414,
+        -1.3856320679187775
+      ]
+    },
+    {
+      "name": "Left-Cerebellum-White-Matter",
+      "cortical": false,
+      "hemisphere": "left",
+      "vertices": 11602,
+      "triangles": 23200,
+      "center": [
+        -0.7371918503195047,
+        -0.7861161082983017,
+        -1.2119231075048447
+      ]
+    },
+    {
+      "name": "Left-Hippocampus",
+      "cortical": false,
+      "hemisphere": "left",
+      "vertices": 3452,
+      "triangles": 6900,
+      "center": [
+        -0.6829770654439926,
+        -0.534552276134491,
+        -0.33799829706549644
+      ]
+    },
+    {
+      "name": "Left-Inf-Lat-Vent",
+      "cortical": false,
+      "hemisphere": "left",
+      "vertices": 298,
+      "triangles": 588,
+      "center": [
+        -0.9291564226150513,
+        -0.5753240287303925,
+        -0.2900126352906227
+      ]
+    },
+    {
+      "name": "Left-Lateral-Ventricle",
+      "cortical": false,
+      "hemisphere": "left",
+      "vertices": 5262,
+      "triangles": 10536,
+      "center": [
+        -0.4840153604745865,
+        -0.0170048326253891,
+        -0.05174487829208374
+      ]
+    },
+    {
+      "name": "Left-Pallidum",
+      "cortical": false,
+      "hemisphere": "left",
+      "vertices": 1458,
+      "triangles": 2912,
+      "center": [
+        -0.5920656025409698,
+        -0.35081423074007034,
+        0.2208525836467743
+      ]
+    },
+    {
+      "name": "Left-Putamen",
+      "cortical": false,
+      "hemisphere": "left",
+      "vertices": 3466,
+      "triangles": 6928,
+      "center": [
+        -0.6731934547424316,
+        -0.324367580935359,
+        0.31890320032835007
+      ]
+    },
+    {
+      "name": "Left-Thalamus-Proper",
+      "cortical": false,
+      "hemisphere": "left",
+      "vertices": 3732,
+      "triangles": 7460,
+      "center": [
+        -0.3910651132464409,
+        -0.08464963734149933,
+        -0.08703552186489105
+      ]
+    },
+    {
+      "name": "Left-VentralDC",
+      "cortical": false,
+      "hemisphere": "left",
+      "vertices": 3146,
+      "triangles": 6292,
+      "center": [
+        -0.4261415065266192,
+        -0.49105246365070343,
+        -0.03785896301269531
+      ]
+    },
+    {
+      "name": "Right-Accumbens-area",
+      "cortical": false,
+      "hemisphere": "right",
+      "vertices": 824,
+      "triangles": 1644,
+      "center": [
+        0.261120043694973,
+        -0.5160066932439804,
+        0.5917300432920456
+      ]
+    },
+    {
+      "name": "Right-Amygdala",
+      "cortical": false,
+      "hemisphere": "right",
+      "vertices": 1128,
+      "triangles": 2252,
+      "center": [
+        0.6644425094127655,
+        -0.8019220530986786,
+        0.13734484685119241
+      ]
+    },
+    {
+      "name": "Right-Caudate",
+      "cortical": false,
+      "hemisphere": "right",
+      "vertices": 2978,
+      "triangles": 5956,
+      "center": [
+        0.3516376242041588,
+        -0.1441754400730133,
+        0.38781000673770905
+      ]
+    },
+    {
+      "name": "Right-Cerebellum-Cortex",
+      "cortical": false,
+      "hemisphere": "right",
+      "vertices": 27672,
+      "triangles": 55400,
+      "center": [
+        0.7294404208660126,
+        -0.8902670405805111,
+        -1.3415933549404144
+      ]
+    },
+    {
+      "name": "Right-Cerebellum-White-Matter",
+      "cortical": false,
+      "hemisphere": "right",
+      "vertices": 10624,
+      "triangles": 21260,
+      "center": [
+        0.6111206356436014,
+        -0.825223296880722,
+        -1.2342512756586075
+      ]
+    },
+    {
+      "name": "Right-Hippocampus",
+      "cortical": false,
+      "hemisphere": "right",
+      "vertices": 3502,
+      "triangles": 7000,
+      "center": [
+        0.6556074321269989,
+        -0.5307566933333874,
+        -0.2987632527947426
+      ]
+    },
+    {
+      "name": "Right-Inf-Lat-Vent",
+      "cortical": false,
+      "hemisphere": "right",
+      "vertices": 404,
+      "triangles": 800,
+      "center": [
+        0.7782487869262695,
+        -0.7957934141159058,
+        0.0007451735436916351
+      ]
+    },
+    {
+      "name": "Right-Lateral-Ventricle",
+      "cortical": false,
+      "hemisphere": "right",
+      "vertices": 4218,
+      "triangles": 8440,
+      "center": [
+        0.4702661456540227,
+        -0.06759265065193176,
+        0.05232378840446472
+      ]
+    },
+    {
+      "name": "Right-Pallidum",
+      "cortical": false,
+      "hemisphere": "right",
+      "vertices": 1194,
+      "triangles": 2384,
+      "center": [
+        0.5473624467849731,
+        -0.4078758582472801,
+        0.30310647655278444
+      ]
+    },
+    {
+      "name": "Right-Putamen",
+      "cortical": false,
+      "hemisphere": "right",
+      "vertices": 3172,
+      "triangles": 6340,
+      "center": [
+        0.6421239227056503,
+        -0.3721363637596369,
+        0.3877872973680496
+      ]
+    },
+    {
+      "name": "Right-Thalamus-Proper",
+      "cortical": false,
+      "hemisphere": "right",
+      "vertices": 3412,
+      "triangles": 6820,
+      "center": [
+        0.3543530600145459,
+        -0.09831397980451584,
+        -0.03582228720188141
+      ]
+    },
+    {
+      "name": "Right-VentralDC",
+      "cortical": false,
+      "hemisphere": "right",
+      "vertices": 3100,
+      "triangles": 6204,
+      "center": [
+        0.3966218112036586,
+        -0.5043031126260757,
+        -0.004375264048576355
+      ]
+    }
+  ],
+  "triangles": 923667
+}

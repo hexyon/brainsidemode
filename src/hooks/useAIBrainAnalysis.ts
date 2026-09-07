@@ -18,6 +18,7 @@ export function useAIBrainAnalysis() {
 
     setIsAnalyzing(true);
     setError(null);
+    setResult(null);
 
     try {
       const { data, error: fnError } = await supabase.functions.invoke("analyze-brain-activity", {
@@ -32,9 +33,12 @@ export function useAIBrainAnalysis() {
         throw new Error(data.error);
       }
 
+      if (!Array.isArray(data?.regions) || typeof data?.description !== "string") {
+        throw new Error("The activity service returned an incomplete response. Please try again.");
+      }
       const analysisResult: AnalysisResult = {
-        regions: data.regions || [],
-        description: data.description || "Analysis complete.",
+        regions: data.regions.filter((id: unknown): id is string => typeof id === "string"),
+        description: data.description,
       };
 
       setResult(analysisResult);

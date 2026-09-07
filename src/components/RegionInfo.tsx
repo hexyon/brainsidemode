@@ -1,105 +1,20 @@
-import { getRegionById } from "@/data/brainRegions";
+import { ArrowUpRight, Focus } from 'lucide-react';
+import { getRegionById } from '@/data/brainRegions';
+import { partName, regionNotes, type AtlasPart } from '@/data/anatomy';
 
-interface RegionInfoProps {
-  regionId: string | null;
-  activityContext?: string;
-  onClose: () => void;
-}
-
-const RegionInfo = ({ regionId, activityContext, onClose }: RegionInfoProps) => {
+interface Props {regionId:string|null; part:AtlasPart|null; isolated:boolean; onIsolate:()=>void;}
+export default function RegionInfo({regionId,part,isolated,onIsolate}:Props) {
   const region = regionId ? getRegionById(regionId) : null;
-
-  if (!region) return null;
-
-  return (
-    <div className="apple-card animate-fade-in-up">
-      <div className="max-w-6xl mx-auto space-y-6 p-4">
-
-        {/* Header */}
-        <div>
-          <div className="bg-white dark:bg-black border-2 border-border rounded-2xl p-6 flex items-center justify-between">
-            <h2 className="text-[32px] font-bold text-black dark:text-white leading-tight" style={{ fontFamily: 'Times New Roman, Times, serif' }}>
-              {region.name}
-            </h2>
-            <button
-              onClick={onClose}
-              className="text-muted-foreground hover:text-foreground transition-colors text-2xl leading-none"
-              aria-label="Close"
-            >
-              ×
-            </button>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-          {/* Image Card */}
-          <div className="relative">
-            <div className="bg-gray-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow aspect-square flex items-center justify-center">
-              <div className="rounded-xl overflow-hidden bg-white/60 dark:bg-black/20 p-4 w-full h-full flex items-center justify-center">
-                <img
-                  src={region.imagePath}
-                  alt={region.name}
-                  className="w-full h-full object-contain"
-                  onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Definition Card */}
-          <div className="relative">
-            <div className="bg-gray-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow aspect-square flex flex-col">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="text-[26px] font-bold text-gray-800">Definition</span>
-              </div>
-              <div className="-mx-8 mb-6 border-b border-border dark:hidden" />
-              <div className="-mx-8 mb-6 bg-red-500 py-1 hidden dark:block" />
-              <p className="text-[23px] text-gray-800 leading-relaxed">
-                {region.description}
-              </p>
-            </div>
-          </div>
-
-          {/* Key Functions Card */}
-          <div className="relative">
-            <div className="bg-gray-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow aspect-square flex flex-col">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="text-[26px] font-bold text-gray-800">Key Functions</span>
-              </div>
-              <div className="-mx-8 mb-6 border-b border-border dark:hidden" />
-              <div className="-mx-8 mb-6 bg-red-500 py-1 hidden dark:block" />
-              <div className="flex flex-wrap gap-3 flex-1 content-start">
-                {region.functions.slice(0, 8).map((func) => (
-                  <span
-                    key={func}
-                    className="inline-flex items-center px-4 py-2 rounded-xl bg-white/60 dark:bg-black/30 border border-gray-300 dark:border-gray-600 text-gray-800 font-medium text-[23px] shadow-sm"
-                  >
-                    {func}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Activity Context Card */}
-          <div className="relative">
-            <div className="bg-gray-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow aspect-square flex flex-col">
-              <div className="flex items-center gap-3 mb-3">
-                <span className="text-[26px] font-bold text-gray-800">Activity Context</span>
-              </div>
-              <div className="-mx-8 mb-6 border-b border-border dark:hidden" />
-              <div className="-mx-8 mb-6 bg-red-500 py-1 hidden dark:block" />
-              <p className="text-[23px] text-gray-800 leading-relaxed">
-                {activityContext || `Search for an activity to see how ${region.name} contributes to it.`}
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default RegionInfo;
+  const title = part ? partName(part.name) : region?.name;
+  if (!title) return <aside className="region-story"><p className="eyebrow">A little curiosity goes a long way</p><h2>Meet your mind.</h2><p>Turn the brain around and choose a part. We’ll explore what it does, where it lives, and how it works with the rest.</p><span className="story-hint">You can also choose a region from the guide below.</span></aside>;
+  return <aside className="region-story" aria-live="polite" aria-atomic="true">
+    <p className="eyebrow">{part ? `${part.hemisphere==='midline'?'Midline':part.hemisphere+' hemisphere'} · ${part.cortical?'Cortex':'Inner anatomy'}` : region?.category}</p>
+    <h2>{title}</h2>
+    {part && region && <p className="region-parent">Part of your {region.name.toLowerCase()} guide</p>}
+    <p className="region-description">{region?.description || 'An individually segmented anatomical structure from the MRI-derived atlas. Explore its shape and its position relative to the surrounding brain.'}</p>
+    {region && <><h3>What it helps with</h3><ul className="function-list">{region.functions.map(f=><li key={f}>{f}</li>)}</ul></>}
+    <button className={`isolate-button ${isolated?'selected':''}`} onClick={onIsolate} aria-pressed={isolated}><Focus size={17}/>{isolated?'Show surrounding brain':'Isolate this selection'}</button>
+    <div className="anatomy-note"><h3>About this highlight</h3><p>{regionNotes[regionId || ''] || (part ? 'This is an anatomical atlas parcel. Its shape comes from one person’s MRI; functional boundaries and individual anatomy vary.' : 'Both anatomical sides are highlighted. These structures work with distributed networks across the brain.')}</p></div>
+    <a className="text-link" href="https://brainder.org/research/brain-for-blender/" target="_blank" rel="noreferrer">Explore the model’s source <ArrowUpRight size={15}/></a>
+  </aside>;
+}
