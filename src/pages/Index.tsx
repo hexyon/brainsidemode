@@ -53,7 +53,7 @@ export default function Index() {
   const activeRegions = (result?.regions || []).filter(id=>brainRegions.some(r=>r.id===id));
   return <main className="app-shell">
     <header className="site-header">
-      <a href="/" className="wordmark" aria-label="Brain Side home"><span className="brand-symbol"><Brain size={25} strokeWidth={1.5}/></span>brain side<span className="brand-dot">.</span></a>
+      <a href="/" className="wordmark" aria-label="Brain Side home"><img src="/favicon.ico" alt="Brain Side" className="brand-logo"/></a>
       <div className="header-right"><span className="edition-label">A field guide to you</span><button className="theme-button" aria-label={dark?'Switch to light mode':'Switch to dark mode'} onClick={()=>setDark(!dark)}>{dark?<Sun size={19}/>:<Moon size={19}/>}</button></div>
     </header>
     <section className="intro"><div><p className="eyebrow">THE HUMAN BRAIN, A LITTLE CLOSER</p><h1>A world inside <em>your mind.</em></h1></div><p>Turn it. Explore it. Get to know the<br className="desktop-break"/> remarkable parts that make you, you.</p></section>

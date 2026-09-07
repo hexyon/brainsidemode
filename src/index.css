@@ -20,6 +20,7 @@
 .site-header { height:100px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid hsl(var(--border)); }
 .wordmark { display:flex; align-items:center; font-size:29px; letter-spacing:-1.2px; text-decoration:none; }
 .brand-symbol { width:43px; height:43px; background:#ead7c9; color:#9e583d; border-radius:15px 18px 14px 19px; display:grid; place-items:center; margin-right:11px; transform:rotate(-7deg); }
+.brand-logo { width:36px; height:36px; object-fit:contain; }
 .brand-dot { color:hsl(var(--primary)); }
 .header-right { display:flex; gap:26px; align-items:center; }
 .edition-label { font-size:14px; color:hsl(var(--muted-foreground)); }
