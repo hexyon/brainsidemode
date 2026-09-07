@@ -27,3 +27,6 @@ dist-ssr
 *.sw?
 .mesh-cache/
 .site-staging/
+bun.lock
+bun.lockb
+.openai/
