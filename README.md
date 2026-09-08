@@ -1,4 +1,4 @@
-# Brain Side Pro
+# Brain Side
 
 An interactive, MRI-derived human brain atlas built with React, Three.js, React Three Fiber, and Vite. The model contains 102 original meshes and 923,667 triangles. Both hemispheres use their original anatomy, not mirrored copies.
 
